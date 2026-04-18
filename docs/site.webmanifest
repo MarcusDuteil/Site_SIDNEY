@@ -1,0 +1,15 @@
+{
+  "name": "Sidney Hip Hop",
+  "short_name": "Sidney",
+  "start_url": "/Site_SIDNEY/",
+  "display": "standalone",
+  "background_color": "#17100d",
+  "theme_color": "#17100d",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

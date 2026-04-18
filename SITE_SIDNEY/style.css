@@ -254,6 +254,7 @@ h3 {
   width: 100%;
   height: auto;
   object-fit: initial;
+  aspect-ratio: auto;
 }
 
 .portrait-card img {
@@ -494,6 +495,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .site-header {
+    justify-items: start;
+  }
+
   .main-nav,
   .social-links {
     justify-content: flex-start;
@@ -501,15 +506,31 @@ h3 {
 
   .hero {
     min-height: auto;
+    gap: 28px;
+    padding: 40px 0 56px;
   }
 
   .hero-media {
     transform: none;
+    max-width: 760px;
+    margin: 0 auto;
   }
 
   .cards-grid,
   .press-list {
     grid-template-columns: 1fr;
+  }
+
+  .portrait-card {
+    max-width: 560px;
+  }
+
+  .portrait-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center top;
   }
 }
 
@@ -520,8 +541,9 @@ h3 {
   }
 
   .site-header {
-    padding: 14px 12px;
-    gap: 14px;
+    position: static;
+    padding: 14px 12px 16px;
+    gap: 10px;
   }
 
   .main-nav,
@@ -531,12 +553,85 @@ h3 {
     gap: 8px;
   }
 
+  .main-nav {
+    width: 100%;
+  }
+
+  .main-nav a {
+    min-height: 36px;
+    padding: 0 12px;
+    font-size: 0.86rem;
+  }
+
+  .social-links {
+    width: 100%;
+    gap: 12px;
+  }
+
   h1 {
-    font-size: clamp(2.8rem, 18vw, 4.2rem);
+    font-size: clamp(2.35rem, 15vw, 3.7rem);
+    line-height: 0.94;
+    letter-spacing: -0.06em;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 10vw, 2.6rem);
+    line-height: 1;
+  }
+
+  .hero {
+    gap: 20px;
+    padding: 28px 0 44px;
+  }
+
+  .hero-copy p:not(.eyebrow),
+  .section p,
+  .bio-text p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero-actions,
+  .contact-actions {
+    width: 100%;
+  }
+
+  .feature-card,
+  .contact-section,
+  .bio-text,
+  .timeline div,
+  .press-list article {
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .hero-media {
+    border-radius: 24px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-media::after {
+    background: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, 0.32));
   }
 
   .hero-media img {
-    height: 460px;
+    width: 100%;
+    height: auto;
+  }
+
+  .portrait-card img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center 18%;
+  }
+
+  .video-frame {
+    border-radius: 20px;
   }
 
   .site-footer {

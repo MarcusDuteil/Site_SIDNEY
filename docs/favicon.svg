@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Sidney Hip Hop">
+  <rect width="256" height="256" rx="24" fill="#17100d" />
+  <text
+    x="40"
+    y="110"
+    fill="#fff7e8"
+    font-family="'Trebuchet MS', Arial, sans-serif"
+    font-size="56"
+    font-weight="700"
+    letter-spacing="2"
+  >
+    SIDNEY
+  </text>
+  <text
+    x="40"
+    y="174"
+    fill="#ffb22e"
+    font-family="'Trebuchet MS', Arial, sans-serif"
+    font-size="38"
+    font-weight="700"
+    letter-spacing="2"
+  >
+    HIP HOP
+  </text>
+</svg>
